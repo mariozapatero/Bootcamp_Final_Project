@@ -93,7 +93,7 @@ La manera de utilizar las dos funciones anteriores para combinarlar y obtener lo
 query_results = single_searchTweets('nike -is:retweet lang:en')[0]
 token = single_searchTweets('nike -is:retweet lang:en')[1]
 
-while query[1]:
+while len(query_results) < 'nº de tweets deseados':
     query = all_searchTweets('nike -is:retweet lang:en', token)
     query_results += query[0]
     token = query[1]
