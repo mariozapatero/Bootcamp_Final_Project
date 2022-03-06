@@ -7,17 +7,20 @@ def drop_duplicates(dataframe):
 
 
 
-def basic_cleanning(string):
+def basic_cleaning(string):
     
     string = re.sub('http[^\s]*\s', ' ', string)   # Quitamos urls (desde http hasta el siguiente espacio).
     
     string = re.sub('@[^\s]*\s', ' ', string)   # Eliminamos usuarios (desde @ hasta el siguiente espacio)
 
-    #string = " ".join(re.findall('[a-z]+', string)) # Eliminamos todo lo que no sea una letra.
-
-    #return string
+    numbers = {'1':' one', '2':' two', '3':' three', '4':' four', '5':' five',
+               '6': ' six', '7':' seven', '8':' eight', '9':' nine', '0':' zero',
+               '$':' dollars', '€':' euros'}    # Diccionario para sustituir los dígitos por el número escrito, '$' por 'dollar' y '€' por 'euro'.
+                                              # Incluimos un espacio al principio para evitar problemas con otras transformaciones en la función.
+    for number, word in numbers.items():
+        string = string.replace(number, word)
     
-    string = string.split(' ')    # Tratamos los hashtags como caso partcular (a partir de aquí empieza su tratamiento).
+    string = string.split(' ')    # Tratamos los hashtags como caso particular (a partir de aquí empieza su tratamiento).
     
     result = []                   # Generamos lista vacía para evitar problemas en el bucle (para qno eliminar elementos de la lista sobre la que iteramos).
     
