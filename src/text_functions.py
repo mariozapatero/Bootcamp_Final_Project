@@ -1,3 +1,5 @@
+import re
+
 # Lista de palabras relacionadas con el atributo de marca 'precio'.
 
 price_list = ['ackers', 'affordable', 'banknote', 'bargain', 'bill', 'bill', 'boodle', 'brass', 'brass', 'bread',
@@ -11,8 +13,8 @@ price_list = ['ackers', 'affordable', 'banknote', 'bargain', 'bill', 'bill', 'bo
               'sum', 'terms', 'theft', 'thievery', 'toll', 'valuation', 'value', 'wherewithal', 'wonga', 'worthy']
 
 
-def data_groups(string):
-
+def data_groups(string):    # Función para definir el atributo de marca al que hace refencia el tweet.
+                            # Este es el nivel más básico con 'price' y 'quality' como únicos atributos.
     matches = []
 
     for word in price_list:
@@ -24,4 +26,11 @@ def data_groups(string):
     else:
         return 'quality'
 
+
+
+
+def extract_hashtags(string): # Queremos extraer los hashtags de los tweets y almacenarlos en una nueva columna.
+                              # Realmente no es una función de limpieza como tal, pero debemos hacerlo antes de limpiar los datos (eliminaremos #).
+    hashtags = re.findall('#[^\s]*', string)   # Generamos una lista con todos los hashtags del tweet (si no hay # nos devuelve lista vacía).
+    return hashtags           # Esta nueva columna de hashtags nos servirá para análisis de los hashtags a posteriori.
 

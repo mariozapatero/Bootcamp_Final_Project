@@ -8,19 +8,11 @@ def drop_duplicates(dataframe):
 
 
 
-def extract_hashtags(string): # Queremos extraer los hashtags de los tweets y almacenarlos en una nueva columna.
-                              # Realmente no es una función de limpieza como tal, pero debemos hacerlo antes de limpiar los datos (eliminaremos #).
-    hashtags = re.findall('#[^\s]*', string)   # Generamos una lista con todos los hashtags del tweet (si no hay # nos devuelve lista vacía).
-    return hashtags           # Esta nueva columna de hashtags nos servirá para análisis de los hashtags a posteriori.
-
-
-
-
-def basic_cleaning(string):     #OJO QUE ES LA ANTIGUA!!!!
+def basic_cleaning(string):
     
-    string = re.sub('http[^\s]*\s', ' ', string)   # Quitamos urls (desde http hasta el siguiente espacio).
+    string = re.sub('http[^\s]*', ' ', string)   # Quitamos urls (desde http hasta el siguiente espacio).
     
-    string = re.sub('@[^\s]*\s', ' ', string)   # Eliminamos usuarios (desde @ hasta el siguiente espacio)
+    string = re.sub('@[^\s]*', ' ', string)   # Eliminamos usuarios (desde @ hasta el siguiente espacio)
 
     numbers = {'1':' one', '2':' two', '3':' three', '4':' four', '5':' five',
                '6': ' six', '7':' seven', '8':' eight', '9':' nine', '0':' zero',
@@ -40,7 +32,11 @@ def basic_cleaning(string):     #OJO QUE ES LA ANTIGUA!!!!
     for index in range(len(result)):      # Queremos pasar de '#HelloWorld' a 'hello world', por ejemplo.
         if result[index][0] != '#':       # Descartamos los hashtags.
             result[index] = result[index].title()   #Ponemos la primera letra en mayúscula (podríamos usar capitalize()).
-    
+
+        if result[index][0] == '#' and len(result[index])>1:       # Si es hasgtag y existe segunda posición (no es solo '#')...
+            result[index] = result[index].replace(result[index][1], result[index][1].capitalize(), 1)  # Nos aseguramos de que la primera letra (después de #) está en mayúcula.
+                                                                                                       # Si no estuviera en mayúscula la función eliminaría el hashtag completo.
+
     result = ' '.join(result)     # Pasamos la lista a una única string (con la inicial de cada palabla en mayúscula).
     
     result = re.findall('[A-Z][a-z]*', result) # Cambiamos los hashtags a lo que queremos (separar palabras por mayúsculas).
