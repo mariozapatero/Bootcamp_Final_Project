@@ -7,7 +7,16 @@ def drop_duplicates(dataframe):
 
 
 
-def basic_cleaning(string):
+
+def extract_hashtags(string): # Queremos extraer los hashtags de los tweets y almacenarlos en una nueva columna.
+                              # Realmente no es una función de limpieza como tal, pero debemos hacerlo antes de limpiar los datos (eliminaremos #).
+    hashtags = re.findall('#[^\s]*', string)   # Generamos una lista con todos los hashtags del tweet (si no hay # nos devuelve lista vacía).
+    return hashtags           # Esta nueva columna de hashtags nos servirá para análisis de los hashtags a posteriori.
+
+
+
+
+def basic_cleaning(string):     #OJO QUE ES LA ANTIGUA!!!!
     
     string = re.sub('http[^\s]*\s', ' ', string)   # Quitamos urls (desde http hasta el siguiente espacio).
     
