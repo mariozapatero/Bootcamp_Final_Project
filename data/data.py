@@ -1,1 +1,0 @@
-# Nos sirve para almacenar la data que vayamos recolectando.
