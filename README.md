@@ -9,7 +9,7 @@
 
 Social Mapper se desarrolla como proyecto final para el Data Analytics Bootcamp de Ironhack.
 
-El proyecto se lleva a cabo durante un periodo de tiempo de 7 días de trabajo. Al contar con tan poco tiempo, el resultado es en realidad un mínimo producto viable de la herramienta.
+El proyecto se lleva a cabo durante un periodo de tiempo de 7 días de trabajo. Al contar con tan poco tiempo, el resultado es en realidad un mínimo producto viable de la herramienta, la cual tiene un potencial mucho mayor al que se muestra en esta primera versión.
 
 
 ## Objetivo
