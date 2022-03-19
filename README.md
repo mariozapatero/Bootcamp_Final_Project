@@ -16,7 +16,7 @@ El proyecto se lleva a cabo durante un periodo de tiempo de 7 días de trabajo. 
 
 Social Mapper nace como un concepto que pretende aportar valor al marketing estratégico a través del análisis de datos.
 
-El objetivo final es desarrollar una herramienta de construcción de mapas de posicionamiento a través de​ social listening basado en el procesamiento del lenguaje natural (NLP).
+El objetivo es desarrollar una herramienta de construcción de mapas de posicionamiento a través de​ social listening basado en el procesamiento del lenguaje natural (NLP).
 
 Dadas las limitaciones del proyecto, la meta a alcanzar en esta primera versión de la herramienta es el desarrollo de un prototipo que demuestre que la idea es viable y que puede proporcionar resultados relevantes que aporten valor a la gestión de las marcas y la manera en que actúan en el mercado.
 
