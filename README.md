@@ -3,7 +3,7 @@
 
 # Social Mapper
 
-[Link a la presentación](https://1drv.ms/p/s!AotMQ8QrJclkg6lnI7sopfi5fCKzpA?e=QE8cmh) Power Point online (presentación de la herramienta y de algunos de los resultados obtenidos, con una pequeña explicación de cada diapositiva en notas).
+[Link a la presentación](https://1drv.ms/p/s!AotMQ8QrJclkg6lnI7sopfi5fCKzpA?e=QE8cmh) Power Point online (presentación de la herramienta y algunos de los resultados obtenidos, con una pequeña explicación de cada diapositiva en notas).
 
 ## Contexto
 
