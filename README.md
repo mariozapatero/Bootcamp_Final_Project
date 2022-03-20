@@ -11,7 +11,7 @@ Social Mapper se desarrolla como proyecto final para el Data Analytics Bootcamp 
 
 El proyecto se lleva a cabo durante un periodo de tiempo de 7 días de trabajo. Al contar con tan poco tiempo, el resultado es en realidad un mínimo producto viable de la herramienta, la cual tiene un potencial mucho mayor al que se muestra en esta primera versión.
 
-Social Mapper aborda dos conceptos fundamentales - los mapas de posicionamiento y el *social listening* - para dar solución a una problemática real en la marcas a través del procesamiento del lenguaje natural (NLP).
+Social Mapper aborda dos conceptos fundamentales - los mapas de posicionamiento y el *social listening* - para dar solución a una problemática real en marketing estratégico a través del procesamiento del lenguaje natural (NLP).
 
 
 ## Objetivo
