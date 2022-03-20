@@ -102,7 +102,7 @@ while len(query_results) < 'nº de tweets deseados':
 
 
 
-def searchAll(query):     # SOLO podemos utilizarlo con Academic Access.
+def searchAll(query):     # SOLO podemos utilizarlo con Academic Access Premium.
 
     client = getClient()
     all_tweets = []
