@@ -4,6 +4,7 @@
 # Social Mapper
 
 [Link a la presentación Power Point online](https://1drv.ms/p/s!AotMQ8QrJclkg6lnUITa_US68WW9HQ?e=5hc0Lm) (presentación de la herramienta y algunos de los resultados obtenidos mediante la misma, con una pequeña explicación de cada diapositiva en notas).
+Se recomienda su lectura como introducción al proyecto para así tener una viión general del mismo más allá del código que lo compone.
 
 ## Contexto
 
