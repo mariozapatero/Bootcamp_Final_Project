@@ -6,7 +6,6 @@ def blob_scoring(token):
 
 
 
-
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 vader = SentimentIntensityAnalyzer()

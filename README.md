@@ -5,7 +5,7 @@
 
 [Link a la presentación Power Point online](https://1drv.ms/p/s!AotMQ8QrJclkg6lnUITa_US68WW9HQ?e=5hc0Lm) (presentación de la herramienta y algunos de los resultados obtenidos mediante la misma, con una pequeña explicación de cada diapositiva en **notas**).
 
-Se recomienda su lectura como introducción al proyecto para tener así una visión general del mismo más allá del código que lo compone.
+Se recomienda su lectura como introducción al proyecto para tener así una visión general del mismo, más allá del código que lo compone.
 
 ## Contexto
 
@@ -63,10 +63,11 @@ Las etapas básicas del proceso son las siguientes:​
 - [RegEx](https://docs.python.org/3/library/re.html)
 - [Seaborn](https://seaborn.pydata.org/#)
 - [Plotly](https://plotly.com/python/)
-- [NLTK](https://www.nltk.org/)
 - [spaCy](https://spacy.io/)
-- [TextBlob](https://textblob.readthedocs.io/en/dev/#)
+- [NLTK](https://www.nltk.org/)
 - [VADER](https://pypi.org/project/vaderSentiment/)
+- [TextBlob](https://textblob.readthedocs.io/en/dev/#)
+
 
 
 
