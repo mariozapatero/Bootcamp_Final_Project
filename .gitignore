@@ -2,4 +2,5 @@
 **/*.ipynb_checkpoints/
 **/__pycache__ 
 config.py
-data/
+/data/**
+.data/
