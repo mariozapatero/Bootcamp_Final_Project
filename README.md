@@ -50,7 +50,7 @@ Las etapas básicas del proceso son las siguientes:​
 
 ## Ejemplo de Resultados Obtenidos
 
-<img src= "images/map_example.png">
+<img src= "images/results_example.png">
 
 
 ## Tech Stack
