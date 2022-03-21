@@ -25,13 +25,13 @@ El **objetivo** es desarrollar una herramienta que facilite la construcción de 
 Dadas las limitaciones del proyecto, la meta a alcanzar en esta primera versión de la herramienta es el desarrollo de un prototipo que demuestre que la idea es viable y que puede proporcionar resultados relevantes que aporten valor a la gestión de las marcas y la manera en que actúan en el mercado.
 
 
-## Etapas Básicas del Proyecto
+## Workflow
 
 <img src= "images/process.png">
 
 Las etapas básicas del proceso son las siguientes:​
 
-​
+
 1. *Tweets Extraction:* obtenemos los tweets que mencionan a las marcas analizadas a través de la API de Twitter, gestionando la extracción de datos de manera sencilla gracias a librería Tweepy.​
 
 
@@ -50,7 +50,7 @@ Las etapas básicas del proceso son las siguientes:​
 
 ## Ejemplo de Resultados Obtenidos
 
-**Mapa de Posicionamiento en torno al Mercado del Equipamiento Deportivo:**
+<img src= "images/map_example.png">
 
 
 ## Tech Stack
