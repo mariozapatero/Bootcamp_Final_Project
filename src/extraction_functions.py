@@ -83,12 +83,12 @@ def all_searchTweets(query, token):
 
     except:
         return results
-        print('No next_token avaliable: query copleted.')
+        print('No next_token avaliable: query completed.')
 
 
-##################################################
+
 '''
-La manera de utilizar las dos funciones anteriores para combinarlar y obtener lo que queremos es la siguiente:
+La manera de utilizar las dos funciones anteriores para combinarlaS y obtener lo que queremos es la siguiente:
 
 query_results = single_searchTweets('nike -is:retweet lang:en')[0]
 token = single_searchTweets('nike -is:retweet lang:en')[1]
@@ -97,12 +97,39 @@ while len(query_results) < 'nº de tweets deseados':
     query = all_searchTweets('nike -is:retweet lang:en', token)
     query_results += query[0]
     token = query[1]
+
+Esto es lo que recoge la siguiente función (config_searchTweets).
     '''
-##################################################
+
+
+def config_searchTweets(my_query, quantity):
+
+    query_results = single_searchTweets(my_query)[0]
+    token = single_searchTweets(my_query)[1]
+
+    query = ['setting','while']
+
+    while len(query_results) < quantity:    # Fijamos el mismo número de tweets que los obtenidos para Nike.
+        query = all_searchTweets(my_query, token)
+        query_results += query[0]
+        token = query[1]
+
+    print("Number of extracted tweets: ", len(query_results))
+    return query_results
+    
 
 
 
-def searchAll(query):     # SOLO podemos utilizarlo con Academic Access Premium.
+
+################################################################################
+
+
+
+# OTRAS FUNCIONES:
+
+
+
+def searchAll(query):     # Solo podemos utilizarlo con Premium Academic Access.
 
     client = getClient()
     all_tweets = []
@@ -118,7 +145,7 @@ def searchAll(query):     # SOLO podemos utilizarlo con Academic Access Premium.
 
 
 
-# Funciones de prueba (no utilizadas finalmente al haber construido otras más eficientes).
+# Funciones de prueba (no utilizadas finalmente al haber construido otras más eficientes):
 
 
 '''
